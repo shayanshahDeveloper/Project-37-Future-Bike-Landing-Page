@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Likedin Shayan Shah */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/Bike.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  padding-top: 10px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  padding-left: 50px;
+  gap: 250px;
+  color: #4d4949;
+}
+
+.navpart1 {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  gap: 60px;
+  font-size: 11px;
+  margin-left: 25px;
+}
+
+.navpart1 h1 a {
+  text-decoration: none;
+  color: #4d4949;
+  font-weight: 500;
+  position: relative;
+}
+
+.navpart1 h1 a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #4d4949;
+  top: 35px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.navpart1 h1 a:hover::after {
+  width: 100%;
+}
+
+.nav img {
+  margin-top: 15px;
+  height: 40px;
+  margin-left: 50px;
+  animation: logo 1s ease forwards;
+}
+
+.navpart2 {
+  padding: 20px;
+}
+
+.navpart2 button {
+  padding: 7px;
+  border: none;
+  font-size: 15px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ftbtn {
+  background-color: #4d4949;
+  color: white;
+}
+
+.bike {
+  position: absolute;
+  height: 400px;
+  top: 20%;
+  right: 80px;
+  animation: animate 1s ease forwards;
+}
+
+.text h1 {
+  margin-top: 100px;
+  font-size: 60px;
+  margin-left: 150px;
+  color: #4d4949;
+  font-weight: 400;
+  animation: bottom 1s ease forwards;
+}
+
+.text1 h1 {
+  font-size: 90px;
+  margin-left: 150px;
+  color: #4d4949;
+  margin-top: -10px;
+  font-weight: 800;
+  animation: bottom 1s ease forwards;
+}
+
+.line {
+  height: 500px;
+  width: 7px;
+  background-color: #4d4949;
+  rotate: 90deg;
+  margin-top: -230px;
+  margin-left: 400px;
+}
+
+.tag {
+  margin-top: -230px;
+  margin-left: 150px;
+  color: #4d4949;
+  font-size: 25px;
+  animation: text 1s ease forwards;
+}
+
+.buy button {
+  padding: 10px 15px;
+  font-size: 15px;
+  margin-left: 147px;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  background-color: #4d4949;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #4d4949;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: bottom 1s ease forwards;
+}
+
+.buy button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
